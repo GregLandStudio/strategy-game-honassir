@@ -3,6 +3,6 @@
 
 int main() {
 	using namespace Honassir;
-	Window(500, 500);
+	Window(500, 500,"Honasšir");
 	return 0;
 }

@@ -1,9 +1,12 @@
-#include <SFML/Graphics.hpp>
+
+#include <utility>
 #include <iostream>
-#include <string>
 #include <includes/window.h>
-Honassir::Window::Window(int w, int h) {
-	sf::RenderWindow window(sf::VideoMode(w, h), "Honasšir", sf::Style::Close | sf::Style::Resize);
+Honassir::Window::Window(int w, int h, std::string name):
+	w(w), h(h), name(name),window(sf::VideoMode(w, h), name, sf::Style::Close | sf::Style::Resize){
+		create();
+}
+void Honassir::Window::create(){
 	while(window.isOpen())
 	{
 		sf::Event evnt;
@@ -13,6 +16,9 @@ Honassir::Window::Window(int w, int h) {
 			{
 				case sf::Event::Closed:
 					window.close();
+					break;
+				default:
+					break;
 			}
 		}
 	}
