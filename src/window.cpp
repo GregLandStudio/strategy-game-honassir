@@ -3,19 +3,19 @@
 #include <iostream>
 #include <includes/window.h>
 Honassir::Graphics::Window::Window(int w, int h, std::string name):
-	w(w), h(h), name(name), _window(sf::VideoMode(w, h), name, sf::Style::Close | sf::Style::Resize){
-		while(_window.isOpen()) {
+	w(w), h(h), name(name), window(sf::VideoMode(w, h), name, sf::Style::Close | sf::Style::Resize){
+		while(window.isOpen()) {
 			sf::Event evnt;
-			while(_window.pollEvent(evnt)) {
+			while(window.pollEvent(evnt)) {
 				switch(evnt.type) {
 					case sf::Event::Closed:
-						_window.close();
+						window.close();
 						break;
 					default:
 						break;
 				}
 			}
-			_window.clear(sf::Color::White);
-			_window.display();
+			window.clear(sf::Color::White);
+			window.display();
 		}
 }

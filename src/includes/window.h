@@ -6,12 +6,9 @@ namespace Honassir {
 		class Window {
 			int w,h;
 			std::string name;
-			sf::RenderWindow _window;
 		public:
+			sf::RenderWindow window;
 			Window(int w, int h, std::string name);
-			inline sf::RenderWindow& window(){
-				return _window;
-			}
 		};
 	}
 }
