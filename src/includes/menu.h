@@ -3,8 +3,8 @@ namespace Honassir {
   class MenuItem {
 		public:
 			std::string name;
-			int clr;
-			MenuItem(std::string name, int clr):
+			sf::Color clr;
+			MenuItem(std::string name, sf::Color clr):
 				name(name), clr(clr) {
 
 			}

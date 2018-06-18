@@ -2,12 +2,16 @@
 #include <SFML/Graphics.hpp>
 
 namespace Honassir {
-	class Window {
-		int w,h;
-		std::string name;
-		sf::RenderWindow window;
+	namespace Graphics {
+		class Window {
+			int w,h;
+			std::string name;
+			sf::RenderWindow _window;
 		public:
 			Window(int w, int h, std::string name);
-			void create();
-	};
+			inline sf::RenderWindow& window(){
+				return _window;
+			}
+		};
+	}
 }

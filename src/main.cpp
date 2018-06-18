@@ -4,9 +4,9 @@
 
 int main() {
 	using namespace Honassir;
-	Window(500, 500,"Honasšir");
-	Menu main({MenuItem("Play",0x00ff00),
-				MenuItem("Settings",0x0000ff),
-				MenuItem("Exit",0xff0000),});
+	Graphics::Window(800, 600,"Honasšir");
+	Menu main({MenuItem("Play",sf::Color::Green),
+						MenuItem("Settings",sf::Color::Blue),
+						MenuItem("Exit",sf::Color::Red),});
 	return 0;
 }

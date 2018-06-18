@@ -10,6 +10,6 @@
 ## Authors - Gregory1234 & SamuraiNeo & Luukas7
 ## Graphics library:
 ```sh
-SFML/GRAPHICS.hpp
+SFML
 ```
 ### Works on: Windows & Linux
