@@ -21,5 +21,7 @@ void Honassir::Window::create(){
 					break;
 			}
 		}
+		window.clear();
+		window.display();
 	}
 }
