@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <includes/drawable.h>
 namespace Honassir {
   class MenuItem {
 		public:
@@ -10,12 +11,13 @@ namespace Honassir {
 
 			}
 	};
-	class Menu {
+	class Menu : public Graphics::Drawable {
 		public:
 			std::vector<MenuItem> item;
 			Menu(std::vector<MenuItem> item):
 				item(item) {
 
 			}
+			void draw(Graphics::Window&);
 	};
 }
