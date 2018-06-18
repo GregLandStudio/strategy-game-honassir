@@ -1,10 +1,11 @@
 #pragma once
-#include <includes/window.h>
+
 namespace Honassir {
 	namespace Graphics {
+		class Window;
 		class Drawable {
 		public:
-			virtual void draw(Window&){
+			virtual void draw(Graphics::Window&){
 
 			}
 		};

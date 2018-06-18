@@ -1,6 +1,9 @@
 #pragma once
 #include <vector>
+#include <string>
 #include <includes/drawable.h>
+#include <includes/window.h>
+#include <SFML/Graphics.hpp>
 namespace Honassir {
   class MenuItem {
 		public:
