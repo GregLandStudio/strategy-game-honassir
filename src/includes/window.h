@@ -15,6 +15,7 @@ namespace Honassir {
 			void destroy();
 			void update();
 			bool isClosed();
+			GLFWwindow* getId();
 		};
 	}
 }

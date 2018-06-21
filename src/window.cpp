@@ -27,3 +27,7 @@ void Honassir::Graphics::Window::update(){
 bool Honassir::Graphics::Window::isClosed(){
 	return glfwWindowShouldClose(id);
 }
+
+GLFWwindow* Honassir::Graphics::Window::getId(){
+	return id;
+}

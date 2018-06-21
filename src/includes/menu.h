@@ -19,5 +19,6 @@ namespace Honassir {
 				item(item) {
 
 			}
+			void draw(Graphics::Window&);
 	};
 }
