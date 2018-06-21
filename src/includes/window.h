@@ -1,7 +1,5 @@
 #pragma once
 #include <string>
-#include <SFML/Graphics.hpp>
-#include <includes/drawable.h>
 #include <memory>
 
 namespace Honassir {
@@ -9,11 +7,10 @@ namespace Honassir {
 		class Window {
 			int w,h;
 			std::string name;
+			int id;
 		public:
-			sf::RenderWindow window;
-			std::vector<std::shared_ptr<Drawable>> toDraw={};
 			Window(int w, int h, std::string name);
-			void start();
+			void init();
 		};
 	}
 }

@@ -10,6 +10,6 @@
 ## Authors - Gregory1234 & SamuraiNeo & Luukas7
 ## Graphics library:
 ```sh
-SFML
+nothing
 ```
 ### Works on: Windows & Linux

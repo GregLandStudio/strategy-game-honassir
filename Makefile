@@ -2,7 +2,7 @@ all: bin/honassir
 	bin/honassir
 
 bin/honassir: obj $(patsubst src/%.cpp,obj/%.o,$(wildcard src/*.cpp)) bin
-	g++ -Wall -Wextra -std=c++11 -o bin/honassir $(patsubst src/%.cpp,obj/%.o,$(wildcard src/*.cpp)) -lsfml-graphics -lsfml-window -lsfml-system
+	g++ -Wall -Wextra -std=c++11 -o bin/honassir $(patsubst src/%.cpp,obj/%.o,$(wildcard src/*.cpp))
 
 
 obj/%.o: src/%.cpp $(wildcard src/includes/*.h)
