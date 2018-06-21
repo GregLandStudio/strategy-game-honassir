@@ -10,6 +10,6 @@
 ## Authors - Gregory1234 & SamuraiNeo & Luukas7
 ## Graphics library:
 ```sh
-nothing
+GLFW
 ```
 ### Works on: Windows & Linux
